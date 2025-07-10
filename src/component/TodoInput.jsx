@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './TodoInput.css';
 
 function TodoInput ({ onAdd }) {
     const [text, setText] = useState('');
@@ -22,7 +23,7 @@ function TodoInput ({ onAdd }) {
 
 
     return (
-        <div>
+        <div className="todo-input-wrapper">
             <input type="text" value={text} placeholder="할 일을 입력하세요" onChange={handleTodo}/>
             <button onClick={handleAddClick}>추가</button>
         </div>

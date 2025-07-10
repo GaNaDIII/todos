@@ -1,3 +1,4 @@
+import './TodoItem.css';
 
 function TodoItem ({ todo, onDelete, onToggle }) {
 
@@ -10,9 +11,9 @@ function TodoItem ({ todo, onDelete, onToggle }) {
     }
 
     return (
-        <div>
+        <div className="todo-item-wrapper">
             <p>{todo.text}</p>
-            <button onClick={handleDelete}>삭제</button>
+            <button className="delete-one-button" onClick={handleDelete}>삭제</button>
             <input type="checkbox" onChange={handleAddTogged} />
         </div>
     )

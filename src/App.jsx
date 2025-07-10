@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TodoInput from './component/TodoInput';
 import TodoList from './component/TodoList';
+import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -23,11 +24,13 @@ function App() {
   }
 
   return (
-    <>
-    <TodoInput onAdd={(newTodo) => addTodos(newTodo)}/>
-    <button onClick={handleAllDelete}>전체삭제</button>
+    <div className='app-container'>
+    <div className='button-wrapper'>
+      <TodoInput onAdd={(newTodo) => addTodos(newTodo)}/>
+      <button className="delete-all-btn" onClick={handleAllDelete}>전체삭제</button>
+    </div>
     <TodoList todos={todos} onDelete={(id) => deleteTodos(id)} onToggle={(id) => toggleTodo(id)}/>
-    </>
+    </div>
   )
 }
 

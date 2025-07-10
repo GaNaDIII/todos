@@ -1,0 +1,15 @@
+.todo-item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; 
+}
+
+.delete-one-button {
+  height: 2rem;            
+  font-size: 1rem;         
+  padding: 0 0.5rem;      
+  box-sizing: border-box;
+  margin: 0 0.075rem;        
+}
+

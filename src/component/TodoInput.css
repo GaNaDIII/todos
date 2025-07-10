@@ -1,0 +1,13 @@
+.todo-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.todo-input-wrapper input,
+.todo-input-wrapper button {
+  height: 2.25rem;   
+  font-size: 1rem;      
+  padding: 0 0.75rem;    
+  box-sizing: border-box;
+}
