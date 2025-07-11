@@ -13,8 +13,8 @@ function TodoItem ({ todo, onDelete, onToggle }) {
     return (
         <div className="todo-item-wrapper">
             <p>{todo.text}</p>
-            <button className="delete-one-button" onClick={handleDelete}>삭제</button>
             <input type="checkbox" onChange={handleAddTogged} />
+            <button className="delete-one-button" onClick={handleDelete}>삭제</button>
         </div>
     )
 
